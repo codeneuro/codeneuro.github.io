@@ -77,7 +77,7 @@ a:hover {
 
 @media (max-width: 480px) {
   #info {
-    font-size: 30px;
+    font-size:22px;
   }
   #logo {
     width: 300px;
