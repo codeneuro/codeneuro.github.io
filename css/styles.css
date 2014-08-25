@@ -1,0 +1,102 @@
+html { 
+  background: url(../png/omr_background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	background-color: transparent;
+	color: rgb(220,220,220);
+  font-family: 'Fjord One', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+a {
+  color: rgb(220,220,220);
+  transition: all .25s; 
+  -moz-transition: all .25s; 
+  -webkit-transition: all .25s;
+}
+
+a:hover {
+  color: rgb(170,170,170);
+  text-decoration: none
+}
+
+#logo {
+	width: 600px;
+	margin-top: 50px;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+	margin: 0 auto -150px;
+}
+
+#info {
+  font-size: 45px;
+  line-height: 1em;
+}
+
+#push,
+#footer {
+  height: 150px;
+}
+#footer {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#contact {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+#get-in-touch {
+  font-size: 42px;
+  line-height: 1.5em
+}
+
+#footer-content {
+	opacity: 1;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 40em) {
+  #info {
+    font-size: 36px;
+  }
+  #logo {
+    width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #get-in-touch {
+    font-size: 24px;
+  }
+  #contact {
+    font-size: 18px;
+  }
+}
