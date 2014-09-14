@@ -1,19 +1,29 @@
-html { 
-  background: url(../png/omr_background_blur_2.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 body {
-	background-color: transparent;
-	color: rgb(220,220,220);
+	color: rgb(20,20,20);
   font-family: 'Fjord One', sans-serif;
+  background: rgb(235,235,235);
 }
 
 html, body {
 	height: 100%;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  font-size: 150%;
+  color: rgb(100,100,100);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fjord One', sans-serif;
+}
+
+.jumbotron h1 {
+  line-height: 1.25em
+}
+
+h2 {
+  color: black;
 }
 
 a {
@@ -23,14 +33,58 @@ a {
   -webkit-transition: all .25s;
 }
 
+.wherelink {
+  color: rgb(196,69,95)
+}
+
+.wherelink:hover {
+  color: rgb(125,44,60)
+}
+
 a:hover {
   color: rgb(170,170,170);
   text-decoration: none
 }
 
+#register {
+  color: rgb(20,20,20);
+  border-color: rgb(20,20,20);
+  background: none;
+  size: 40px;
+  margin-top: 20px;
+}
+
+#register:hover {
+  background: white;
+}
+
+.btn-xlg {
+    padding: 10px 20px;
+    font-size: 30px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
+
+.jumbotron {
+  margin-bottom: 0px;
+  background-image: url(../png/omr_background_blur_2.png);
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#subhead {
+  line-height: 1.5;
+}
+
 #logo {
-	width: 600px;
-	margin-top: 50px;
+	width: 550px;
+	margin-top: 10px;
 }
 
 #wrap {
@@ -40,17 +94,17 @@ a:hover {
 	margin: 0 auto -150px;
 }
 
-#info {
-  font-size: 45px;
-  line-height: 1em;
+#overlay {
+  background-image: linear-gradient(to right,#FFFFFF,#000000);
+  opacity: 0.5;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-#push,
-#footer {
-  height: 150px;
-}
-#footer {
-  background-color: rgba(0,0,0,0.5);
+#infotext {
+  margin-top: -25px;
 }
 
 .center {
@@ -60,35 +114,103 @@ a:hover {
 }
 
 #contact {
-  font-size: 24px;
-  vertical-align: middle;
   margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.sociallink {
+  font-size: 150%;
+  margin-right: 50px;
 }
 
 #get-in-touch {
-  font-size: 42px;
-  line-height: 1.5em
+  font-size: 350%;
+  color: rgb(220,220,220);
 }
 
 #footer-content {
 	opacity: 1;
 }
 
+#main {
+  background: rgb(235,235,235);
+}
+
+#whatheader, #whenheader, #whereheader {
+  margin-bottom: 30px;
+}
+
+#whatheader {
+  border: 0;
+  background: linear-gradient(to right, rgb(67,207,101), rgb(49, 153, 75));
+  height: 3px;
+}
+
+#whenheader {
+  border: 0;
+  background: linear-gradient(to right, rgb(4,148,179), rgb(3,97,117));
+  height: 3px;
+}
+
+#whereheader {
+  border: 0;
+  height: 3px;
+  background: linear-gradient(to right, rgb(196,69,95), rgb(125,44,60));
+}
+
+#infosection {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.infolabel {
+  position: absolute;
+  top: -20px;
+  right: 100%;
+  transform: rotate(270deg);
+  transform-origin: right top;
+  font-size: 350%;
+  vertical-align: top;
+}
+
+#questions {
+  background-color: rgb(65,64,65);
+  border-top: 1px solid rgb(30,30,30);
+}
+
+#map {
+  width:100%;
+  height:300px;
+}
+
+footer {
+  color: rgb(20,20,20);
+  background-color: rgb(109,110,103);
+  border-top: 1px solid rgb(140,140,140);
+  padding: 25px;
+}
 
 @media (max-width: 480px) {
-  #info {
-    font-size:22px;
-  }
   #logo {
     width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  #get-in-touch {
-    font-size: 20px;
+
+  .btn-xlg {
+    padding: 8px;
+    font-size: 23px;
   }
-  #contact {
-    font-size: 14px;
+}
+
+@media (max-width: 1280px) {
+  .infolabel {
+    transform: none;
+    top: -80px;
+    left: 10px;
+  }
+  #infosection {
+    margin-top: 75px;
   }
 }

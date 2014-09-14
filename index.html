@@ -5,6 +5,8 @@
   <title>codeneuro</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
@@ -12,43 +14,131 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="js/respond.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRiVmlwSQFUKgHbbqE3xu4Sikr1RB8b1M&sensor=false"></script>
+  <script src="js/map.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <html>
 <body>
 
-
-  <div id="wrap">
+  <div class="jumbotron">
     <div class="container">
       <img id="logo" src="svg/logo.svg">
     </div>
-
-    <div id="info" class="container">
-      <br>
-      <p>Bringing data science and neuroscience together.</p>
-      <br>
-      <p>First meetup October 30-31st, 2014 in SF.</p>
-      <br>
-      <p>More info here, soon.</p>
+    <div id="subhead" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Bringing neuroscience and data science together</h1>
+        </div>
+      </div>
     </div>
-
+    <br>
+    <div id="overlay" class="container-fluid">
+      <div id="info" class="container">
+        <h2>First meetup October 30-31st, 2014</h2>
+        <h2>111 Minna St., San Francisco, CA</h2>
+        <a id="register" type="button" class="btn btn-default btn-xlg btn-outline">Registration coming soon</a>
+      </div>
+    </div>
   </div>
 
-  <div id="footer">
+  <section id="main">
+    <br>
+    <br>
+    <div id="infosection" class="container">
+      <div id="what" class="row">
+        <div class="col-md-1">
+          <h1 class="infolabel" style="color: rgb(67,207,101)">What</h1>
+        </div>
+        <div id="infotext" class="col-md-10">
+          <hr id="whatheader">
+          <p>CodeNeuro is about understanding the brain, and the computing technology we need to get there. We're bringing together neuroscientists, data scientists, hackers, and visualizers to help tackle one of the most fascinating problems in biology &mdash; and hopefully change the way we think about data in the process.</p>
+          <p>At our first event, invited talks will delve into large-scale mapping of neural activity, distributed machine learning techniques for wrangling terabytes of data, web interfaces for interactive visualization, and everything in between!</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infosection" class="container">
+      <div id="when" class="row">
+        <div class="col-md-1">
+          <h1 class="infolabel" style="color: rgb(4,148,179)">When</h1>
+        </div>
+        <div id="infotext" class="col-md-10">
+          <hr id="whenheader">
+          <div class="row">
+            <div class="col-md-6">
+              <p style="font-family: 'Oswald', sans serif; color:rgb(90,90,90)">THURSDAY 6 - 9PM</p>
+              <br>
+              <p>Listen to short talks on cutting-edge techniques and challanges in large-scale neuroscience, distributed computing, machine learning, and visualization.</p>
+            </div>
+            <div class="col-md-6">
+              <p style="font-family: 'Oswald', sans serif; color:rgb(90,90,90)">FRIDAY 10AM - 4PM</p>
+              <br>
+              <p>Participate in break-out sessions for hacking on problems and beginning collaborations. Bring laptops, code, data, and ideas!</p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Arrive at <span style="color: rgb(20,20,20)">5PM on Thursday</span> for pizza*. Stay after the talks to discuss ideas. Then come at <span style="color: rgb(20,20,20)">10AM on Friday</span> to caffeinate and collaborate!</p>
+              <p style="font-size: 18px">* Pizza provided, drinks available for purchase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="infosection" class="container">
+      <div id="where" class="row">
+        <div class="col-md-1">
+          <h1 class="infolabel" style="color: rgb(196,69,95)">Where</h1>
+        </div>
+        <div id="infotext" class="col-md-10">
+          <hr id="whereheader">
+          <div class="row">
+            <div class="col-md-4">
+              <p>We’ll be at <a class="wherelink" href="https://www.google.com/maps/place/111+Minna+Gallery/@37.787322,-122.399412,17z/data=!3m1!4b1!4m2!3m1!1s0x8085807d3194cce1:0xb55875af8c0ca88b">111 Minna</a>, an open gallery space perfect for presenting, coding, and meeting new collaborators.</p>
+              <p>Registration is free, transporation and lodging not included.</p>
+              <p>For nearby hotels, check out the Westin Market Street or Courtyard San Francisco Downtown.</p>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-7">
+              <div id="map"></map>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </section>
+
+  <div id="questions" class="container-fluid">
     <div class="container">
       <div id="contact" class="row">
-        <div class="col-xs-4">
-          <p id="get-in-touch">Get in touch</p>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-6">
+          <h1 id="get-in-touch">Questions? Get in touch.</h1>
+        </div>
+        <div class="col-md-1">
         </div>
         <div class="col-md-4">
-          <p><i id="icon" class="fa fa-envelope-square fa-3x"></i>&nbsp;&nbsp;<a href="mailto:info@codeneuro.org">info@codeneuro.org</a></p>
-        </div>
-        <div class="col-md-4">
-          <p><i id="icon" class="fa fa-twitter-square fa-3x"></i>&nbsp;&nbsp;<a href="https://twitter.com/CodeNeuro">@CodeNeuro</a></p>
+          <span><a class="sociallink" href="mailto:info@codeneuro.org"><i id="icon" class="fa fa-envelope-square fa-5x"></i></a><a class="sociallink" href="https://twitter.com/CodeNeuro"><i id="icon" class="fa fa-twitter-square fa-5x"></i></a></span>
         </div>
       </div>
     </div>
   </div>
+
+  <footer>
+    <div id="coordinatedby" class="row">
+      <h4 class="text-center"><span style="color: rgb(220,220,220)">Coordinated by</span> Jeremy Freeman, Michael Broxton, Eric Trautman, Logan Grosenick, Nick Sofroniew, and many others.</h4>
+    </div>
+    <div id="hostedby" class="row">
+      <h4 class="text-center"><span style="color: rgb(220,220,220)">Hosted by</span> HHMI Janelia Research Campus</h4>
+    </div>
+  </footer>
 
 </body>
 </html>
