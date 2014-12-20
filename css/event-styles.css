@@ -34,6 +34,13 @@ a {
   -webkit-transition: all .25s;
 }
 
+.whenlink {
+  color: rgb(4,148,179)
+}
+
+.whenlink:hover {
+  color: rgb(3,97,117);
+}
 
 .wherelink {
   color: rgb(196,69,95)
@@ -71,15 +78,22 @@ a:hover {
             border-radius: 8px;
     }
 
-.jumbotron {
+.jumbotron, .jumbotron-simple {
   margin-bottom: 0px;
-  background-image: url(../png/omr_background_blur_2.png);
   background-position: 0% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.jumbotron {
+  background-image: url(../png/omr_background_blur_2.png);
+}
+
+.jumbotron-simple {
+
 }
 
 #subhead {

@@ -1,0 +1,129 @@
+body {
+	color: rgb(20,20,20);
+  font-family: 'Fjord One', sans-serif;
+  background: rgb(51,51,51);
+}
+
+html, body {
+	height: 100%;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  font-size: 150%;
+  color: rgb(100,100,100);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fjord One', sans-serif;
+}
+
+.jumbotron h1 {
+  line-height: 1.25em
+}
+
+h2 {
+  color: rgb(235,235,235);
+  font-family: 'Abel', sans-serif;
+}
+
+a {
+  color: rgb(220,220,220);
+  text-decoration: none;
+  transition: all .25s; 
+  -moz-transition: all .25s; 
+  -webkit-transition: all .25s;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(100,100,100);
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#logo {
+  margin-top: 25px;
+  width: 800px;
+}
+
+
+.location {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 300%;
+  fill: rgb(245,245,245);
+  text-decoration: none;
+  transition: all .25s; 
+  -moz-transition: all .25s; 
+  -webkit-transition: all .25s;
+}
+
+a .location:hover {
+  fill: rgb(10,10,10);
+}
+
+
+.sociallink {
+  font-size: 150%;
+  margin-right: 50px;
+}
+
+a .sociallink:hover {
+  fill: rgb(10,10,10);
+}
+
+
+#get-in-touch {
+  font-size: 350%;
+  color: rgb(220,220,220);
+}
+
+#questions {
+  background-color: rgb(10,10,10);
+  border-top: 1px solid rgb(150,150,150);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+footer {
+  color: rgb(20,20,20);
+  background-color: rgb(109,110,103);
+  border-top: 1px solid rgb(140,140,140);
+  padding: 25px;
+}
+
+@media (max-width: 480px) {
+  #logo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-xlg {
+    padding: 8px;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .infolabel {
+    transform: none;
+    top: -80px;
+    left: 10px;
+  }
+  #infosection {
+    margin-top: 75px;
+  }
+}

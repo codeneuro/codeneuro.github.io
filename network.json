@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "name": "SF Fall 2014",
+      "group": 0,
+      "url": "2014/SF/event.html"
+    },
+    {
+      "name": "NYC Spring 2015",
+      "group": 1,
+      "url": "2015/NYC/event.html"
+    },
+    {
+      "name": "SF Fall 2015",
+      "group": 2,
+      "url": "2015/SF/event.html"
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 0,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "value": 10
+    }
+  ]
+}
