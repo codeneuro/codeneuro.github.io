@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "ClearSans";
+  src: url("../fonts/clearsans-1.00/EOT/ClearSans-Bold.eot") format("eot"), 
+  		 url("../fonts/clearsans-1.00/WOFF/ClearSans-Bold.woff") format("woff"), 
+  		 url("../fonts/clearsans-1.00/TTF/ClearSans-Bold.ttf") format("truetype"), 
+  		 url("../fonts/clearsans-1.00/SVG/ClearSans-Bold.svg") format("svg"); }
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+  src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"), 
+  		 url("../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), 
+  		 url("../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"), 
+  		 url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg"); }
+
+body {
+	background-color: #D1D3D4;
+	font-family: "AvenirNext", sans-serif;
+	font-weight: 500;
+}
+
+a {
+	color: #DA1C5C;
+	border-bottom: 1px dashed;
+	transition: all .20s; 
+}
+
+a:hover {
+	color: #8A123A;
+}
+
+h1 {
+	font-family: "ClearSans";
+	font-size: 48px;
+	font-weight: 800;
+	color: rgb(71,71,71);
+}
+
+h2 {
+	font-family: "ClearSans";
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 0.6em;
+	color: rgb(115,115,115);
+}
+
+h3 {
+	font-family: "ClearSans";
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 0.6em;
+	color: rgb(71,71,71);
+}
+
+h4 {
+	font-family: "AvenirNext";
+	font-weight: 500;
+	font-size: 20px;
+	color: rgb(115,115,115);
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn {
+	color: #DA1C5C;
+	background: #D1D3D4;
+	border: 3px solid #DA1C5C;
+	width: 190px;
+	height: 60px;
+	padding: 0;
+	margin-top: 0px;
+}
+
+.btn:active {
+	border: 3px solid #8A123A;
+	color: #8A123A;
+}
+
+.btn:hover {
+	
+	background: rgb(170,170,170);
+}
+
+.info {
+	color: rgb(115,115,115);
+	font-family: "AvenirNext";
+	text-align: left;
+	font-style: italic;
+}
+
+
+.row {
+	max-width: 1200px !important;
+}
+
+.tutorial {
+	padding-bottom: 10px;
+}
+
+.hackathons {
+
+}
+
+.organizers {
+	text-align: left;
+	margin-top: -20px;
+}
+
+.icons {
+	text-align: right;
+	margin-top: 0px;
+}
+
+.container {
+	border-style: solid;
+	border-color: rgb(120,120,120);
+	border-width: 2px;
+	text-align: center;
+	margin: 1.6em;
+	margin-top: 1.8em;
+	padding: 1em;
+}
+
+.vert-double-lines {
+	border-left-style: solid;
+	border-left-color: #DA1C5C;
+	border-left-width: 3px;
+	border-right-style: solid;
+	border-right-color: #DA1C5C;
+	border-right-width: 3px;
+	height: 80px;
+	width: 2%;
+	margin: 0 auto;
+}
+
+.vert-line {
+	border-left-style: solid;
+	border-left-color: #DA1C5C;
+	border-left-width: 3px;
+	height: 270px;
+	width: 0%;
+	margin: 0 auto;
+}
+
+.sociallink {
+  margin-right: 19px;
+  border-bottom: none;
+  color: rgb(120,120,120);
+}
+
+.highlight {
+	color: rgb(20,20,20);
+}
