@@ -7,11 +7,6 @@
   		 url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg"); }
 
 @font-face {
-	font-family: "Fjord";
-	src: url("fonts/FjordOne-Regular.tff") format("truetype");
-}
-
-@font-face {
 	font-family: "Anke";
 	src: url("fonts/Anke.tff") format("truetype");
 }
@@ -26,7 +21,7 @@ a {
 }
 
 h1 {
-	font-family: "Fjord";
+	font-family: "Fjord One";
 	font-size: 38px;
 	color: rgb(201,201,201);
 	font-weight: 100;
@@ -92,7 +87,7 @@ p {
 }
 
 .latest {
-	font-family: "Fjord";
+	font-family: "Fjord One";
 	font-size: 40px;
 	padding-top: 2px;
 	color: rgb(201,201,201);
