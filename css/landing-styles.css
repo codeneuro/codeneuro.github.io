@@ -94,8 +94,10 @@ p {
 }
 
 .location {
-	font-family: "Anke";
+	font-family: "AvenirNext";
 	color: rgb(201,201,201);
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
 .highlight {

@@ -48,21 +48,25 @@
     </div>
 
     <div class="column-6">
-      <div id="network">
+      <div id="network" style="margin-top: -115px;">
       </div>
 
       <div class="row">
 
-        <div class="column-1">
-          <div>
-            <img src="svg/bars.svg" style="width: 80px">
-          </div>
-        </div>
+        <div style="margin-top: 15px">
 
-        <div class="column-5">
-          <div class="latest">
-            See the latest...
+          <div class="column-1">
+            <div>
+              <img src="svg/bars.svg" style="width: 80px">
+            </div>
           </div>
+
+          <div class="column-5">
+            <div class="latest">
+              See the latest...
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -89,7 +93,7 @@
           <h4>Cooridnators include Jeremy Freeman, Michael Broxton, Nicholas Sofroniew, Logan Grosenick, Eric Trautman, Matt Conlen, Deep Ganguli, Jeff Hammerbacher, and many others</h4>
         </div>
 
-        <div class="column-3" style="text-align: right; margin-top: 10px">
+        <div class="column-3" style="text-align: right; margin-top: 15px">
           <span><a class="sociallink" href="mailto:info@codeneuro.org"><i id="icon" class="fa fa-envelope-square fa-4x"></i></a><a class="sociallink" href="https://twitter.com/CodeNeuro"><i id="icon" class="fa fa-twitter-square fa-4x"></i></a></span>
         </div>
 
@@ -105,7 +109,7 @@
 <script>
 
 var width = 500,
-    height = 400
+    height = 500
 
 var color = [d3.rgb(50,110,220), d3.rgb(155,75,220), d3.rgb(0,170,78)]
 
@@ -152,17 +156,29 @@ d3.json("network.json", function(json) {
       .attr("width", 100)
       .attr("height", 100);
     
-  node.append("circle")
-      .attr("class", "node")
-      .attr("r", 50)
-      .style("fill", function(d) { return "#5DD4D4"; })
-      .style("fill-opacity", 0.5)
-      .style("stroke", "white")
-      .style("stroke-width", 3)
-      .call(force.drag);
-
   node.append("a")
     .attr("xlink:href", function(d){return d.url;})
+      .append("circle")
+      .attr("class", "node")
+      .attr("r", 50)
+      .style("fill", "rgb(100,100,100)" )
+      .style("fill-opacity", 0.6)
+      .style("stroke", "#5DD4D4")
+      .style("stroke-width", 5)
+      .call(force.drag)
+      .on("mouseover", mover)
+      .on("mouseout", mout)
+
+
+  function mover(d) {
+    d3.select(this).transition().style("fill", "#5DD4D4")
+  }
+
+  function mout(d) {
+    d3.select(this).transition().style("fill", "rgb(100,100,100)")
+  }
+
+  node
   .append("text")
     .text(function(d) { return d.name; })
     .attr("class", "location")
