@@ -22,6 +22,7 @@ body {
 a {
 	color: #DA1C5C;
 	border-bottom: 1px dashed;
+	text-decoration: none;
 	transition: all .20s; 
 }
 

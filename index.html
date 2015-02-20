@@ -4,45 +4,99 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="description" content="CodeNeuro is bringing neuroscientists, data scientists, hackers, and visualizers together to help understand the brain.">
   <title>CodeNeuro</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/homepage-styles.css">
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/landing-styles.css">
+  <link rel="stylesheet" href="css/shelves.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="js/respond.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/d3.v3.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <html>
 <body>
 
-<div class="container">
-  <img class="center-block" id="logo" src="svg/logo.svg">
-</div>
+  <div class="row">
 
-<div class="container" id="network">
-</div>
-
-<div id="questions" class="container-fluid">
-    <div class="container">
-      <div id="contact" class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-6">
-          <h1 id="get-in-touch">Questions? Get in touch.</h1>
-        </div>
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-4">
-          <span><a class="sociallink" href="mailto:info@codeneuro.org"><i id="icon" class="fa fa-envelope-square fa-5x"></i></a><a class="sociallink" href="https://twitter.com/CodeNeuro"><i id="icon" class="fa fa-twitter-square fa-5x"></i></a></span>
-        </div>
-      </div>
+    <div class="column-7 suffix-5">
+      <img style="width: 600px; margin-bottom: -10px" src="svg/logolanding.svg">
     </div>
+
+  </div>
+
+  <div class="row" style="padding-bottom: 50px">
+
+    <div class="column-5 suffix-1">
+      <h1>Bringing neuroscience and data science together</h1>
+
+      <div class="text-box">
+        <p>CodeNeuro is about understanding the <span class="highlight">brain</span>, and the computing <span class="highlight">technology</span> we need to get there.</p>
+      </div>
+
+      <br>
+
+      <div class="text-box">
+        <p>We're a collective of neuroscientists, data scientists, hackers, and visualizers working <span class="highlight">together</span> to tackle one of the most fascinating problems in biology — and change the way we think about data and computing in the process.</p>
+      </div>
+
+      <br>
+
+      <div class="text-box">
+        <p>We do this through meetups, hackathons, competitions, and <span class="highlight">sharing</span> data and code.</p>
+      </div>
+
+    </div>
+
+    <div class="column-6">
+      <div id="network">
+      </div>
+
+      <div class="row">
+
+        <div class="column-1">
+          <div>
+            <img src="svg/bars.svg" style="width: 80px">
+          </div>
+        </div>
+
+        <div class="column-5">
+          <div class="latest">
+            See the latest...
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+
+      <div style="margin-left: 10px">
+        <button class="btn">DATASETS</button>
+        <button class="btn">CHALLENGES</button>
+        <button class="btn">EVENT</button>
+      </div>
+
+    </div>
+  
+  </div>
+
+    <hr style="border-top: dotted 3px; border-bottom: none; color: rgb(179,179,179)">
+
+    <div>
+
+      <div class="row">
+
+        <div class="column-9">
+          <h4>Cooridnators include Jeremy Freeman, Michael Broxton, Nicholas Sofroniew, Logan Grosenick, Eric Trautman, Matt Conlen, Deep Ganguli, Jeff Hammerbacher, and many others</h4>
+        </div>
+
+        <div class="column-3" style="text-align: right; margin-top: 10px">
+          <span><a class="sociallink" href="mailto:info@codeneuro.org"><i id="icon" class="fa fa-envelope-square fa-4x"></i></a><a class="sociallink" href="https://twitter.com/CodeNeuro"><i id="icon" class="fa fa-twitter-square fa-4x"></i></a></span>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
 </body>
@@ -50,8 +104,8 @@
 
 <script>
 
-var width = 1100,
-    height = 670
+var width = 500,
+    height = 400
 
 var color = [d3.rgb(50,110,220), d3.rgb(155,75,220), d3.rgb(0,170,78)]
 
@@ -70,7 +124,7 @@ d3.json("network.json", function(json) {
 
   var force = d3.layout.force()
     .size([width, height])
-    .linkDistance(350)
+    .linkDistance(250)
     .charge(0.01)
     .gravity(0.1)
     .nodes(json.nodes)
@@ -81,8 +135,8 @@ d3.json("network.json", function(json) {
       .data(json.links)
     .enter().append("line")
       .attr("class", "link")
-      .style("stroke", "rgb(200,200,200)")
-      .style("stroke-opacity", 0.7)
+      .style("stroke", "rgb(50,50,50)")
+      .style("stroke-opacity", 0.9)
       .style("stroke-width", function(d) { return Math.sqrt(d.value); });
 
   var node = svg.selectAll(".node")
@@ -93,15 +147,15 @@ d3.json("network.json", function(json) {
 
   node.append("image")
       .attr("xlink:href", function(d) { return "png/network/" + d.name + ".png"; })
-      .attr("x", -75)
-      .attr("y", -75)
-      .attr("width", 150)
-      .attr("height", 150);
+      .attr("x", -50)
+      .attr("y", -50)
+      .attr("width", 100)
+      .attr("height", 100);
     
   node.append("circle")
       .attr("class", "node")
-      .attr("r", 75)
-      .style("fill", function(d) { return color[d.group]; })
+      .attr("r", 50)
+      .style("fill", function(d) { return "#5DD4D4"; })
       .style("fill-opacity", 0.5)
       .style("stroke", "white")
       .style("stroke-width", 3)
@@ -112,8 +166,11 @@ d3.json("network.json", function(json) {
   .append("text")
     .text(function(d) { return d.name; })
     .attr("class", "location")
-    .attr("y", -100)
-    .attr("x", -50)
+    .style("fill", "rgb(201,201,201)")
+    .style("font-size", 20)
+    .attr("text-anchor", "middle")
+    .attr("y", 80)
+    .attr("x", 0)
 
   
   node.transition()

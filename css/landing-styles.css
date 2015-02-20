@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+  src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"), 
+  		 url("../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), 
+  		 url("../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"), 
+  		 url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg"); }
+
+@font-face {
+	font-family: "Fjord";
+	src: url("fonts/FjordOne-Regular.tff") format("truetype");
+}
+
+@font-face {
+	font-family: "Anke";
+	src: url("fonts/Anke.tff") format("truetype");
+}
+
+body {
+	background: rgb(102,102,102);
+}
+
+a {
+		text-decoration: none;
+	transition: all .20s; 
+}
+
+h1 {
+	font-family: "Fjord";
+	font-size: 38px;
+	color: rgb(201,201,201);
+	font-weight: 100;
+}
+
+h4 {
+	font-family: "AvenirNext";
+	font-size: 18px;
+	color: rgb(153,153,153);
+}
+
+p {
+	font-family: "Avenir";
+	color: rgb(77,77,77);
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn {
+	font-family: "AvenirNext";
+	color: #F1C36A;
+	background: none;
+	border: 3px solid #F1C36A;
+	height: 60px;
+	padding: 20px;
+	margin-right: 20px;
+	padding-top: 18px;
+}
+
+.btn:active {
+	background: rgb(100,100,100);
+	border: 3px solid #5DD4D4;
+	color: #5DD4D4;
+}
+
+.btn:hover {
+	background: rgb(130,130,130);
+}
+
+.latest {
+	font-family: "Fjord";
+	font-size: 40px;
+	padding-top: 2px;
+	color: rgb(201,201,201);
+}
+
+.location {
+	font-family: "Anke";
+	color: rgb(201,201,201);
+}
+
+.highlight {
+	color: rgb(5,5,5);
+}
+
+.text-border {
+	border-left: 6px solid #F1C36A;
+	min-height: 100px;
+	height: 100%;
+}
+
+.text-box:before { 
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: -20px;
+  right: 5px;
+  bottom: 0px;
+  border-left: 5px solid #F1C36A;
+}
+
+.text-box {
+	font-size: 16px;
+	position: relative;
+	background: rgb(169,169,169);
+	margin-left: 15px;
+	margin-right: -15px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.sociallink {
+  margin-right: 19px;
+  border-bottom: none;
+  color: rgb(200,200,200);
+}
+
+.sociallink:hover {
+	color: rgb(80,80,80);
+};
+
+.sociallink:active {
+	color: rgb(40,40,40);
+};
