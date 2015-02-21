@@ -181,7 +181,12 @@ d3.json("network.json", function(json) {
     d3.select(this).transition().style("fill", "rgb(100,100,100)")
   }
 
-  node
+  function mout2(d) {
+    d3.select(this).transition().style("fill", "rgb(201,201,201)")
+  }
+
+  node.append("a")
+  .attr("xlink:href", function(d){return d.url;})
   .append("text")
     .text(function(d) { return d.name; })
     .attr("class", "location")
@@ -190,6 +195,8 @@ d3.json("network.json", function(json) {
     .attr("text-anchor", "middle")
     .attr("y", 80)
     .attr("x", 0)
+    .on("mouseover", mover)
+    .on("mouseout", mout2)
 
   
   node.transition()
