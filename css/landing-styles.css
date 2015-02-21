@@ -34,8 +34,12 @@ h4 {
 }
 
 p {
-	font-family: "AvenirNext";
+	font-family: "Abel";
 	color: rgb(77,77,77);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+
 }
 
 .btn {
