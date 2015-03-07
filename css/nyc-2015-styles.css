@@ -60,6 +60,14 @@ h4 {
 	color: rgb(115,115,115);
 }
 
+h6 {
+	font-family: "ClearSans";
+	font-size: 24px;
+	font-weight: 800;
+	color: rgb(71,71,71);
+	margin-top: -30px;
+}
+
 .btn {
 	border: none;
 	font-family: inherit;
