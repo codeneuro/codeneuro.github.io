@@ -60,6 +60,13 @@ h4 {
 	color: rgb(115,115,115);
 }
 
+h5 {
+	font-family: "AvenirNext";
+	font-weight: 500;
+	font-size: 17px;
+	color: rgb(115,115,115);
+}
+
 h6 {
 	font-family: "ClearSans";
 	font-size: 24px;
