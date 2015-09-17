@@ -1,0 +1,440 @@
+@font-face {
+  font-family: "ClearSans";
+  src: url("../fonts/clearsans-1.00/EOT/ClearSans-Bold.eot") format("eot"), 
+  		 url("../fonts/clearsans-1.00/WOFF/ClearSans-Bold.woff") format("woff"), 
+  		 url("../fonts/clearsans-1.00/TTF/ClearSans-Bold.ttf") format("truetype"), 
+  		 url("../fonts/clearsans-1.00/SVG/ClearSans-Bold.svg") format("svg"); }
+
+@font-face {
+  font-family: "AleoLight";
+  src: url("../fonts/aleo/Light/aleo-light-webfont.eot") format("eot"), 
+  		 url("../fonts/aleo/Light/aleo-light-webfont.woff") format("woff"), 
+  		 url("../fonts/aleo/Light/aleo-light-webfont.ttf") format("truetype"), 
+  		 url("../fonts/aleo/Light/aleo-light-webfont.svg") format("svg"); }
+
+@font-face {
+  font-family: "AleoRegular";
+  src: url("../fonts/aleo/Regular/aleo-regular-webfont.eot") format("eot"), 
+  		 url("../fonts/aleo/Regular/aleo-regular-webfont.woff") format("woff"), 
+  		 url("../fonts/aleo/Regular/aleo-regular-webfont.ttf") format("truetype"), 
+  		 url("../fonts/aleo/Regular/aleo-regular-webfont.svg") format("svg"); }
+
+
+@font-face {
+  font-family: "AleoBold";
+  src: url("../fonts/aleo/Bold/aleo-bold-webfont.eot") format("eot"), 
+  		 url("../fonts/aleo/Bold/aleo-bold-webfont.woff") format("woff"), 
+  		 url("../fonts/aleo/Bold/aleo-bold-webfont.ttf") format("truetype"), 
+  		 url("../fonts/aleo/Bold/aleo-bold-webfont.svg") format("svg"); }
+
+
+@font-face {
+  font-family: "AleoLightItalic";
+  src: url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.eot") format("eot"), 
+  		 url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.woff") format("woff"), 
+  		 url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.ttf") format("truetype"), 
+  		 url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.svg") format("svg"); }
+
+
+@font-face {
+  font-family: "GlacialIndifferenceBold";
+  src: url("../fonts/GlacialIndifference-Bold.otf") format("opentype")}
+
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+  src: url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"), 
+  		 url("../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), 
+  		 url("../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"), 
+  		 url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg"); }
+
+body {
+	background-color: white;
+	font-family: "AvenirNext", sans-serif;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+}
+
+b {
+	font-family: 'AleoBold';
+}
+
+
+.left {
+	position: absolute;
+	top:0;
+	bottom:0;
+	width: 3%;
+	height: 1850px;
+	background-color: rgb(66,170,204);
+}
+
+.right {
+	position: absolute;
+	top:0;
+	bottom:0;
+	right: 0;
+	width: 3%;
+	height: 1850px;
+	background-color: rgb(241,119,174);
+}
+
+.left-line {
+	vertical-align: middle;
+	display: inline-block;
+	width: 35%;
+	height: 8px;
+	background-color: rgb(66,170,204);
+	margin-right: -8px;
+}
+
+.right-line {
+	vertical-align: middle;
+	display: inline-block;
+	text-align: right;
+	width: 13%;
+	height: 8px;
+	background-color: rgb(241,119,174);
+	margin-left: -8px;
+	padding-right: 8px;
+}
+
+.left-line-full {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	height: 8px;
+	background-color: rgb(66,170,204);
+}
+
+.right-line-full {
+	display: inline-block;
+	float: right;
+	width: 50%;
+	height: 8px;
+	background-color: rgb(241,119,174);
+}
+
+.left-box {
+	float: left;
+	text-align: right;
+	padding: 40px;
+	padding-bottom: 20px;
+	margin-top: 90px;
+	width: 37%;
+	background-color: rgb(66,170,204);
+}
+
+.right-box {
+	float: right;
+	padding: 40px;
+	padding-bottom: 50px;
+	width: 37%;
+	background-color: rgb(241,119,174);
+}
+
+.small-box {
+	height: 60px;
+	margin-top: 120px;
+	padding-bottom: 60px;
+}
+
+.logo {
+	width: 50%; 
+	display: inline-block; 
+	vertical-align: middle;
+}
+
+.slot {
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-family: "AleoLight";
+	padding-bottom: 10px;
+	padding-top: 40px;
+	font-size: 32px;
+	font-weight: 100;
+	line-height: 0.4em;
+	color: rgb(120,120,120);
+}
+
+.slot-right {
+	margin-right: -83px;
+}
+
+.slot-left {
+	margin-left: -83px;
+}
+
+
+.circle {
+	margin-left: 20px;
+	margin-right: 20px;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px; 
+	z-index: 1000;
+	transition: all 1.0s;
+}
+
+
+
+p {
+	color: rgb(90,90,90);
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+a {
+	color: #DA1C5C;
+	border-bottom: 1px dashed;
+	text-decoration: none;
+	transition: all .20s; 
+}
+
+a:hover {
+	color: #8A123A;
+}
+
+.blue {
+	color: rgb(66,170,204);
+}
+
+.pink {
+	color: rgb(241,119,174);;
+}
+
+.blue-bg {
+	background-color: rgb(66,170,204);
+}
+
+.pink-bg {
+	background-color: rgb(241,119,174);
+}
+
+.callout {
+	font-family: "AleoRegular";
+}
+
+.info {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: "GlacialIndifferenceBold";
+	color: white;
+}
+
+h1 {
+	font-family: "AleoLight";
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 0.4em;
+	color: rgb(71,71,71);
+}
+
+h2 {
+	font-family: "AleoLightItalic";
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 0.6em;
+	color: rgb(115,115,115);
+}
+
+h3 {
+	font-family: "ClearSans";
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 0.6em;
+	color: rgb(71,71,71);
+}
+
+h4 {
+	font-family: "AvenirNext";
+	font-weight: 500;
+	font-size: 20px;
+	color: rgb(115,115,115);
+}
+
+h5 {
+	font-family: "AvenirNext";
+	font-weight: 500;
+	font-size: 17px;
+	color: rgb(115,115,115);
+}
+
+h6 {
+	font-family: "ClearSans";
+	font-size: 24px;
+	font-weight: 800;
+	color: rgb(71,71,71);
+	margin-top: -30px;
+}
+
+
+.btn {
+	font-size: 24px;
+	color: white;
+	background: none;
+	border: 5px solid white;
+	width: 250px;
+	height: 100px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.btn:active {
+	border: 3px solid white;
+	color: rgb(241,119,174);
+}
+
+.btn:hover {
+	cursor: pointer;
+	background: white;
+	color:  rgb(241,119,174);
+}
+
+
+.row {
+	max-width: 1200px !important;
+}
+
+.tutorial {
+	padding-bottom: 10px;
+}
+
+.hackathons {
+
+}
+
+.organizers {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.icons {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+.container {
+	border-style: solid;
+	border-color: rgb(120,120,120);
+	border-width: 2px;
+	text-align: center;
+	margin: 1.6em;
+	margin-top: 1.8em;
+	padding: 1em;
+}
+
+.vert-double-lines {
+	border-left-style: solid;
+	border-left-color: #DA1C5C;
+	border-left-width: 3px;
+	border-right-style: solid;
+	border-right-color: #DA1C5C;
+	border-right-width: 3px;
+	height: 80px;
+	width: 2%;
+	margin: 0 auto;
+}
+
+.vert-line {
+	border-left-style: solid;
+	border-left-color: #DA1C5C;
+	border-left-width: 3px;
+	height: 270px;
+	width: 0%;
+	margin: 0 auto;
+}
+
+.sociallink {
+  margin-right: 19px;
+  border-bottom: none;
+  color: rgb(180,180,180);
+}
+
+.sociallink:hover {
+  margin-right: 19px;
+  border-bottom: none;
+  color: rgb(241,119,174);
+}
+
+.sociallink-blue:hover {
+  margin-right: 19px;
+  border-bottom: none;
+  color: rgb(66,170,204);
+}
+
+.highlight {
+	color: rgb(20,20,20);
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+	.left-line {
+		display: none;
+	}
+
+	.right-line {
+		display: none;
+	}
+
+	#schedule {
+		display: none;
+	}
+
+	#top {
+		text-align: center;
+	}
+	.logo {
+		width: 80%; 
+	}
+
+	#header {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+	h1 {
+		font-size: 26px;
+	}
+
+	.left-box {
+		margin-top: 30px;
+		width: 80%;
+		padding: 0px;
+		padding-right: 20px;
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+
+	.right-box {
+		margin-top: 20px;
+		width: 80%;
+		padding: 0px;
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	.small-box {
+		padding-bottom: 20px;
+	}
+
+	.info {
+		font-size: 22px;
+	}
+
+	.slot {
+		font-size: 22px;
+	}
+}
+
