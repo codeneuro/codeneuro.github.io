@@ -67,7 +67,7 @@ b {
 	top:0;
 	bottom:0;
 	width: 3%;
-	height: 1850px;
+	height: 2080px;
 	background-color: rgb(66,170,204);
 }
 
@@ -77,7 +77,7 @@ b {
 	bottom:0;
 	right: 0;
 	width: 3%;
-	height: 1850px;
+	height: 2080px;
 	background-color: rgb(241,119,174);
 }
 
@@ -160,12 +160,33 @@ b {
 	color: rgb(120,120,120);
 }
 
+.slot-sub {
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-family: "AleoLight";
+	padding-bottom: 0px;
+	padding-top: 0px;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 1.3em;
+	color: rgb(120,120,120);
+}
+
 .slot-right {
 	margin-right: -83px;
 }
 
 .slot-left {
 	margin-left: -83px;
+}
+
+.slot-left-sub {
+	margin-left: 43px;
+}
+
+.slot-right-sub {
+	margin-right: 43px;
 }
 
 
