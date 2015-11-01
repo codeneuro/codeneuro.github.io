@@ -211,14 +211,14 @@ p {
 }
 
 a {
-	color: #DA1C5C;
+	color: white;
 	border-bottom: 1px dashed;
 	text-decoration: none;
-	transition: all .20s; 
+	transition: all .50s; 
 }
 
 a:hover {
-	color: #8A123A;
+	border-bottom: 1px solid;
 }
 
 .blue {
