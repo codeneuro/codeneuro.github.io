@@ -211,13 +211,17 @@ p {
 }
 
 a {
-	color: white;
-	border-bottom: 1px dashed;
+	color: white;	
 	text-decoration: none;
 	transition: all .50s; 
 }
 
-a:hover {
+
+.location {
+	border-bottom: 1px dashed;
+}
+
+.location:hover {
 	border-bottom: 1px solid;
 }
 
