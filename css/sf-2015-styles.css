@@ -231,6 +231,15 @@ a {
 	border-bottom: 1px solid;
 }
 
+.host {
+	color: rgb(120,120,120);
+	border-bottom: 1px dashed;
+}
+
+.host:hover {
+	border-bottom: 1px solid;
+}
+
 
 .location {
 	border-bottom: 1px dashed;
@@ -351,7 +360,6 @@ h6 {
 
 .organizers {
 	text-align: center;
-	margin-top: 40px;
 }
 
 .icons {
