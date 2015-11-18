@@ -421,9 +421,30 @@ h6 {
 	color: rgb(20,20,20);
 }
 
+#logo-break {
+	display: none;
+	height: 0px;
+}
+
+#janelia-logo {
+	width: 180px; 
+	margin-top: 0px; 
+	margin-left: 20px; 
+	vertical-align: middle; 
+	max-width: none;
+	margin-right: 30px;
+}
 
 @media screen and (max-width: 1024px) {
 
+	#logo-break {
+		display: inherit;
+	}
+
+	#janelia-logo {
+		margin-right: 0px;
+
+	}
 
 	.left-line {
 		display: none;
