@@ -58,6 +58,16 @@ p {
 	transition: all 0.3s;
 }
 
+.event {
+	font-size: 28px;
+	color: #F1C36A;
+	border-bottom: 1px dashed #F1C36A;
+}
+
+.event:hover {
+	border-bottom: 1px solid #F1C36A;
+}
+
 .btn:after {
 	content: '';
 	position: absolute;
@@ -142,8 +152,16 @@ p {
 
 .sociallink:hover {
 	color: rgb(80,80,80);
-};
+}
 
 .sociallink:active {
 	color: rgb(40,40,40);
-};
+}
+
+@media screen and (max-width: 900px) {
+
+	.btn {
+		margin-bottom: 20px;
+	}
+
+}
