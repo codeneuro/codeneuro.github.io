@@ -158,6 +158,19 @@ p {
 	color: rgb(40,40,40);
 }
 
+.simplelink {
+	color: rgb(200,200,200);
+	cursor: pointer;
+}
+
+.simplelink:hover {
+	color: rgb(30,30,30);
+}
+
+.simplelink:active {
+	color: rgb(10,10,10);
+}
+
 @media screen and (max-width: 900px) {
 
 	.btn {

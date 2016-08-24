@@ -14,6 +14,11 @@
       "name": "SF Fall 2015",
       "group": 2,
       "url": "2015/SF/"
+    },
+    {
+      "name": "SF Fall 2016",
+      "group": 3,
+      "url": "2016/SF/"
     }
   ],
   "links": [
@@ -31,6 +36,21 @@
       "source": 0,
       "target": 2,
       "value": 10
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "value": 10
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "value": 10
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "value": 3
     }
   ]
 }
