@@ -600,6 +600,15 @@ h6 {
 	color: rgb(100,100,100);
 }
 
+.simplelink {
+	color: rgb(100,100,100);
+	border-bottom: dotted 1px rgb(100,100,100);
+}
+
+.simplelink:hover {
+	color: rgb(30,30,30);
+}
+
 
 
 @media screen and (max-width: 1200px) {
