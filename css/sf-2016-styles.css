@@ -72,7 +72,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: calc(100% - 60px);
-	height: 2100px;
+	height: 2400px;
 	border: solid 30px rgb(124,200,153);
 	position: absolute;
 }
@@ -154,13 +154,16 @@ b {
 }
 
 #path-container {
-	margin-top: -175px;
+	pointer-events: none;
+	margin-top: 15px;
 	width: 100%;
-	height: 90%;
+	height: 83%;
 	position: absolute;
 }
 
 #path {
+	z-index: -1000;
+	pointer-events: none;
 	float: center;
 	position: absolute;
 	width:100%;
@@ -285,7 +288,7 @@ b {
 	background-color: rgb(124,200,153);
 	position: absolute;
 	margin-left: -70px;
-	margin-top: 17px;
+	margin-top: 22px;
 	text-align: left;
 }
 
@@ -362,9 +365,14 @@ p {
 }
 
 a {
-	color: white;	
+	color: rgb(124,200,153);
 	text-decoration: none;
-	transition: all .50s; 
+	cursor: pointer;
+	border-bottom: dotted 1px rgb(100,100,100);
+}
+
+a:hover {
+	color: rgb(50,100,70);
 }
 
 .project {
@@ -443,25 +451,25 @@ h2 {
 }
 
 h3 {
-	font-family: "ClearSans";
-	font-size: 30px;
-	font-weight: 600;
+	font-family: "ClearSansLight";
+	font-size: 20px;
 	line-height: 0.6em;
-	color: rgb(115,115,115);
+	color: rgb(140,140,140);
+	margin-left: 10px;
 }
 
 h4 {
-	font-family: "AvenirNext";
-	font-weight: 500;
+	font-family: "ClearSansMedium";
 	font-size: 20px;
 	color: rgb(115,115,115);
+	margin-left: 10px;
 }
 
 h5 {
-	font-family: "AvenirNext";
-	font-weight: 500;
-	font-size: 17px;
+	font-family: "ClearSansMedium";
+	font-size: 20px;
 	color: rgb(115,115,115);
+	margin-left: 10px;
 }
 
 h6 {
@@ -472,6 +480,17 @@ h6 {
 	margin-top: -30px;
 }
 
+.bracket {
+	color: rgb(124,200,153);
+}
+
+.inline {
+	line-height: 1.2em;
+}
+
+.inline-right {
+	text-align: right;
+}
 
 .btn {
 	font-size: 24px;
