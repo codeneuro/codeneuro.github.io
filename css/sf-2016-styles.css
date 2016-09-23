@@ -632,6 +632,14 @@ h6 {
 
 @media screen and (max-width: 1200px) {
 
+	.inline {
+		font-size: 120%;
+	}
+
+	.inline-right {
+		text-align: center;
+	}
+
 	#footer {
 		display: none;
 	}
