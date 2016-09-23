@@ -628,12 +628,16 @@ h6 {
 	color: rgb(30,30,30);
 }
 
+.location-link {
+	
+}
+
 
 
 @media screen and (max-width: 1200px) {
 
 	.inline {
-		font-size: 120%;
+		font-size: 100%;
 	}
 
 	.inline-right {
@@ -646,7 +650,7 @@ h6 {
 
 
 	body {
-		height: 1700px;
+		height: 1900px;
 	}
 
 	#path {
@@ -778,6 +782,10 @@ h6 {
 
 @media screen and (max-width: 820px) {
 
+	body {
+		height: 1700px;
+	}
+
 	.side-text {
 		font-size: 150%;
 	}
@@ -800,7 +808,7 @@ h6 {
 @media screen  and (max-width: 320px) {
 
 	body {
-		height: 1300px;
+		height: 1600px;
 	}
 
 	.side-text {
