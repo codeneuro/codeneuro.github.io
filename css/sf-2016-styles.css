@@ -81,6 +81,11 @@ b {
 	font-family: 'AleoBold';
 }
 
+.register {
+	margin-top: 5px;
+	border: solid 5px white;
+}
+
 #schedule-right {
 	padding-right: 100px;
 	border-right: solid 25px rgb(124,200,153);; 
@@ -194,7 +199,17 @@ b {
 }
 
 .side-text-registration {
-	font-family: 'ClearSansLight';
+	font-family: 'ClearSansMedium';
+	background: white;
+	width: 200px;
+	color: rgb(124,200,153);
+	padding: 5px;
+	cursor: pointer;
+}
+
+.side-text-registration:hover {
+	background: rgb(174,231,204);
+	color: white;
 }
 
 .left {
