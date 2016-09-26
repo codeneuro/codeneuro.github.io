@@ -208,7 +208,7 @@ b {
 }
 
 .side-text-registration:hover {
-	background: rgb(174,231,204);
+	background: rgb(124,200,153);
 	color: white;
 }
 
@@ -652,6 +652,12 @@ h6 {
 
 @media screen and (max-width: 1200px) {
 
+	.side-text-registration {
+		width: 70%;
+		margin-left: 12.5%;
+		text-align: center;
+	}
+
 	.inline {
 		font-size: 100%;
 	}
@@ -713,6 +719,7 @@ h6 {
 
 	.side-box {
 		width: 100%;
+		text-align: center;
 	}
 
 	h2 {
