@@ -72,7 +72,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: calc(100% - 60px);
-	height: 2400px;
+	height: 2200px;
 	border: solid 30px rgb(124,200,153);
 	position: absolute;
 }
@@ -95,7 +95,7 @@ b {
 	display: inline-block;
 	width: 25%;
 	padding-right: 15%;
-	padding-top: 150px;
+	padding-top: 50px;
 }
 
 #left {
@@ -157,7 +157,7 @@ b {
 	pointer-events: none;
 	margin-top: 15px;
 	width: 100%;
-	height: 83%;
+	height: 85%;
 	position: absolute;
 }
 
@@ -168,10 +168,11 @@ b {
 	position: absolute;
 	width:100%;
 	height:100%;
-	top:200;
+	top:-150px;
 	left:0;
 	bottom:0;
 	right:0;
+	max-height: 2200px;
 }
 
 .side-box {
