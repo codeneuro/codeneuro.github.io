@@ -177,7 +177,6 @@ b {
 	left:0;
 	bottom:0;
 	right:0;
-	max-height: 2200px;
 }
 
 .side-box {
@@ -648,6 +647,11 @@ h6 {
 	
 }
 
+@media screen and (min-width: 1700px) {
+	#path {
+		display: none;
+	}
+}
 
 
 @media screen and (max-width: 1200px) {
