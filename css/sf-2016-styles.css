@@ -647,12 +647,21 @@ h6 {
 	
 }
 
+
+
+
 @media screen and (min-width: 1700px) {
 	#path {
 		display: none;
 	}
 }
 
+
+@media screen and (max-width: 1400px) {
+	#path {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 1200px) {
 
