@@ -100,7 +100,7 @@ b {
 	display: inline-block;
 	width: 25%;
 	padding-right: 15%;
-	padding-top: 50px;
+	padding-top: 0px;
 }
 
 #left {
@@ -845,6 +845,10 @@ h6 {
 
 	body {
 		height: 1600px;
+	}
+
+	.inline {
+		font-size: 80%;
 	}
 
 	.side-text {
